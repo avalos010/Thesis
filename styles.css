@@ -106,6 +106,10 @@ input:focus {
 }
 
 .btn-primary {
+  border:1px solid rgba(255,255,255,.3);
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
   color: #fff;
   cursor: pointer;
   width:315px !important;
@@ -163,12 +167,14 @@ footer {
 }
 
 #check:not(:checked) + .side-menu {
-  right: -100%;
+  transform: translateX(100%);
+  display: none;
 }
 
 
 #check:checked) .side-menu {
-  right: 0;
+  transform: translateX(0);
+  display: block;
 }
 
 .side-menu {
@@ -221,6 +227,10 @@ text-decoration: none;
   }
   .intro {
     width: 80%;
+  }
+  footer {
+    position: relative !important;
+    margin-top: 100px;
   }
 }
 
